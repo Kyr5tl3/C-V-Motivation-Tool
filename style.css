@@ -1,0 +1,35 @@
+.motivationtool{
+  width: 1000px;
+}
+
+.release{
+  transform: rotate(0deg);
+}
+
+.sociability{
+  transform: rotate(-45deg);
+}
+
+.belonging{
+  transform: rotate(20deg);
+}
+
+.comfort{
+  transform: rotate(20deg);
+}
+
+.control{
+  transform: rotate(20deg);
+}
+
+.recognition{
+  transform: rotate(20deg);
+}
+
+.status{
+  transform: rotate(20deg);
+}
+
+.excitement{
+  transform: rotate(20deg);
+}
