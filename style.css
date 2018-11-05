@@ -1,35 +1,57 @@
 .motivationtool{
-  width: 1000px;
+  width: 1245px;
+  display: block;
+  position: relative;
 }
 
 .release{
   transform: rotate(0deg);
+  left: 432px;
+  top: 0px;
 }
 
 .sociability{
-  transform: rotate(-45deg);
+  transform: rotate(45deg);
+  left: 711px;
+  top: -171px;
 }
 
 .belonging{
-  transform: rotate(20deg);
+  transform: rotate(90deg);
+  left: 697px;
+  top: 172px;
 }
 
 .comfort{
-  transform: rotate(20deg);
+  transform: rotate(135deg);
+  left: 714px;
+  top: 355px;
 }
 
 .control{
-  transform: rotate(20deg);
+  transform: rotate(180deg);
+  left: 442px;
+  top: 496px;
 }
 
 .recognition{
-  transform: rotate(20deg);
+  transform: rotate(-135deg);
+  left: 105px;
+  top: 358px;
 }
 
 .status{
-  transform: rotate(20deg);
+  transform: rotate(-90deg);
+  left: 59px;
+  top: 182px;
 }
 
 .excitement{
-  transform: rotate(20deg);
+  transform: rotate(-45deg);
+  left: 100px;
+  top: -168px;
+}
+
+.wedge{
+position: absolute;
 }
