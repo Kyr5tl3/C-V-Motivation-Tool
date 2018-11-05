@@ -1,57 +1,139 @@
 .motivationtool{
-  width: 1245px;
+  min-width: 1245px;
   display: block;
   position: relative;
+}
+
+.wedgelabels{
+  height: 100%;
+  width: 100%;
 }
 
 .release{
   transform: rotate(0deg);
   left: 432px;
   top: 0px;
+  background-image: url('images/triangles (no curve labels)/orange (0).png');
+  background-size: 0,0;
 }
 
 .sociability{
   transform: rotate(45deg);
   left: 711px;
   top: -171px;
+  background-image: url('images/triangles (no curve labels)/yellow (-45).png');
+  background-size: 0,0;
 }
 
 .belonging{
   transform: rotate(90deg);
   left: 697px;
   top: 172px;
+  background-image: url('images/triangles (no curve labels)/brown (-90).png');
+  background-size: 0,0;
 }
 
 .comfort{
   transform: rotate(135deg);
   left: 714px;
   top: 355px;
+  background-image: url('images/triangles (no curve labels)/blue (-135).png');
+  background-size: 0,0;
 }
 
 .control{
   transform: rotate(180deg);
   left: 442px;
   top: 496px;
+  background-image: url('images/triangles (no curve labels)/black (-180).png');
+  background-size: 0,0;
 }
 
 .recognition{
   transform: rotate(-135deg);
   left: 105px;
   top: 358px;
+  background-image: url('images/triangles (no curve labels)/green (135).png');
+  background-size: 0,0;
 }
 
 .status{
   transform: rotate(-90deg);
   left: 59px;
   top: 182px;
+  background-image: url('images/triangles (no curve labels)/purple (90).png');
+  background-size: 0,0;
 }
 
 .excitement{
   transform: rotate(-45deg);
   left: 100px;
   top: -168px;
+  background-image: url('images/triangles (no curve labels)/excitement (45).png');
+  background-size: 0,0;
 }
 
 .wedge{
 position: absolute;
 }
+
+.wedge > img{
+  height: 100%;
+  width: 100%;
+}
+
+.motivations{
+  position: absolute;
+  text-align: center;
+  display: none;
+}
+
+.descriptions{
+  position: absolute;
+  display: block;
+  width: 390px;
+}
+
+.descriptions > p{
+
+}
+
+.release > h3 {top: 20%; left: 0; right: 0;}
+.release > .descriptions{transform: skew(20deg); top: 0; left: 12%; right: 0; border-style: solid;}
+.release > .descriptions > h4{transform: skew(-20deg); text-align: center;}
+.release > .descriptions > p{transform: skew(-20deg);}
+
+.sociability > h3 {top: 40%; left: 0; right: 0;}
+.sociability > h3, .sociability > .descriptions {transform: rotate(-45deg);}
+.sociability > .descriptions{top: 25%; left: 20%; right: 0;}
+.sociability > .descriptions > h4{text-align: center;}
+
+.belonging > h3 {top: 30%; left: 0; right: 0;}
+.belonging > h3, .belonging > .descriptions {transform: rotate(-90deg);}
+.belonging > .descriptions{top: 15%; left: 25%;}
+.belonging > .descriptions > h4{text-align: center;}
+
+.comfort > h3 {top: 40%; left: 0; right: 0;}
+.comfort > h3, .comfort > .descriptions {transform: rotate(-135deg);}
+.comfort > .descriptions {top: 20%; left: 20%;}
+.comfort > .descriptions > h4 {text-align: center;}
+
+.control > h3 {top: 20%; left: 0; right: 0;}
+.control > h3, .control > .descriptions {transform: rotate(-180deg);}
+.control > .descriptions{top: 5%; left: 20%;}
+.control > .descriptions > h4 {text-align: center;}
+
+.recognition > h3 {top: 40%; left: 0; right: 0;}
+.recognition > h3, .recognition > .descriptions {transform: rotate(135deg);}
+.recognition > .descriptions{top: 20%; left: 20%;}
+.recognition > .descriptions > h4 {text-align: center;}
+
+.status > h3 {top: 30%; left: 0; right: 0;}
+.status > h3, .status > .descriptions {transform: rotate(90deg);}
+.status > .descriptions{top: 10%; left: 25%;}
+.status > .descriptions > h4 {text-align: center;}
+
+.excitement > h3 {top: 40%; left: 0; right: 0;}
+.excitement > h3, .excitement > .descriptions {transform: rotate(45deg);}
+.excitement > .descriptions{top: 20%; left: 20%;}
+.excitement > .descriptions > h4 {text-align: center;}
