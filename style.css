@@ -1,5 +1,6 @@
 .motivationtool{
-  min-width: 1245px;
+  min-width: 1200px;
+  min-height: 1000px;
   display: block;
   position: relative;
 }
@@ -90,8 +91,7 @@ position: absolute;
 
 .descriptions{
   position: absolute;
-  display: block;
-  width: 390px;
+  /* display: block; */
 }
 
 .descriptions > p{
@@ -99,23 +99,26 @@ position: absolute;
 }
 
 .release > h3 {top: 20%; left: 0; right: 0;}
-.release > .descriptions{transform: skew(20deg); top: 0; left: 12%; right: 0; border-style: solid;}
-.release > .descriptions > h4{transform: skew(-20deg); text-align: center;}
-.release > .descriptions > p{transform: skew(-20deg);}
+/* .release > .descriptions{position: absolute; top: 0px; left: 5px; width: 0px; height: 0px; border-style: inset; border-width: 500px 200px 0px 200px; border-color: pink transparent transparent transparent;} */
+.release > .descriptions{top: 0px; left: 5px; width: 300px; height: 300px; overflow: hidden; text-align: justify; -webkit-shape-inside: polygon(100% 20% 20%);}
+/* .release > .descriptions > span{position: absolute; text-align: center; top:-500px;} */
 
-.sociability > h3 {top: 40%; left: 0; right: 0;}
+.release > .descriptions > h4{position: relative;top: 0px; text-align: center;}
+.release > .descriptions > p{position: relative; text-align: center;}
+
+.sociability > h3 {top: 30%; left: 0; right: 0;}
 .sociability > h3, .sociability > .descriptions {transform: rotate(-45deg);}
-.sociability > .descriptions{top: 25%; left: 20%; right: 0;}
+.sociability > .descriptions{width: 80%; top: 25%; left: 15%; right: 0;}
 .sociability > .descriptions > h4{text-align: center;}
 
 .belonging > h3 {top: 30%; left: 0; right: 0;}
 .belonging > h3, .belonging > .descriptions {transform: rotate(-90deg);}
-.belonging > .descriptions{top: 15%; left: 25%;}
+.belonging > .descriptions{width: 60%; top: 15%; left: 20%;}
 .belonging > .descriptions > h4{text-align: center;}
 
 .comfort > h3 {top: 40%; left: 0; right: 0;}
 .comfort > h3, .comfort > .descriptions {transform: rotate(-135deg);}
-.comfort > .descriptions {top: 20%; left: 20%;}
+.comfort > .descriptions {width: 65%; top: 25%; left: 20%;}
 .comfort > .descriptions > h4 {text-align: center;}
 
 .control > h3 {top: 20%; left: 0; right: 0;}
@@ -137,3 +140,7 @@ position: absolute;
 .excitement > h3, .excitement > .descriptions {transform: rotate(45deg);}
 .excitement > .descriptions{top: 20%; left: 20%;}
 .excitement > .descriptions > h4 {text-align: center;}
+
+.centrecap{height: 20%; width: 20%; position: absolute; top: 39%; left: 41.5%; z-index: 100;}
+.centrecap > img {transform: scale(0.8);}
+.centrecap > h3 {position: absolute; top: 20%; left: 15%; width: 50%;text-align: center;}
