@@ -1,146 +1,86 @@
-.motivationtool{
-  min-width: 1200px;
-  min-height: 1000px;
-  display: block;
-  position: relative;
-}
+@font-face {font-family: 'LiberatorH'; src: url('fonts/Liberator-Heavy.otf');}
 
-.wedgelabels{
-  height: 100%;
-  width: 100%;
-}
+@font-face {font-family: 'Courier'; src: url('fonts/Courier Regular.ttf');}
 
-.release{
-  transform: rotate(0deg);
-  left: 432px;
-  top: 0px;
-  background-image: url('images/triangles (no curve labels)/orange (0).png');
-  background-size: 0,0;
-}
+@font-face {font-family: 'Bebas'; src: url('fonts/Bebas.ttf');}
 
-.sociability{
-  transform: rotate(45deg);
-  left: 711px;
-  top: -171px;
-  background-image: url('images/triangles (no curve labels)/yellow (-45).png');
-  background-size: 0,0;
-}
+@font-face {font-family: 'FjallaOne'; src: url('fonts/FjallaOne-Regular.ttf');}
 
-.belonging{
-  transform: rotate(90deg);
-  left: 697px;
-  top: 172px;
-  background-image: url('images/triangles (no curve labels)/brown (-90).png');
-  background-size: 0,0;
-}
+h3{font-family: 'LiberatorH';font-size: 20px;}
+h4{font-family: 'LiberatorH';font-size: 20px; font-weight: 800;}
 
-.comfort{
-  transform: rotate(135deg);
-  left: 714px;
-  top: 355px;
-  background-image: url('images/triangles (no curve labels)/blue (-135).png');
-  background-size: 0,0;
-}
+p{font-family: Courier;}
 
-.control{
-  transform: rotate(180deg);
-  left: 442px;
-  top: 496px;
-  background-image: url('images/triangles (no curve labels)/black (-180).png');
-  background-size: 0,0;
-}
+.motivationtool{max-width: 1200px; display: block; position: relative;}
 
-.recognition{
-  transform: rotate(-135deg);
-  left: 105px;
-  top: 358px;
-  background-image: url('images/triangles (no curve labels)/green (135).png');
-  background-size: 0,0;
-}
+.wedgelabels{display: inline-block; height: 100%; width: 100%;}
 
-.status{
-  transform: rotate(-90deg);
-  left: 59px;
-  top: 182px;
-  background-image: url('images/triangles (no curve labels)/purple (90).png');
-  background-size: 0,0;
-}
+.excitement{max-width: 37.7%; max-height: 500px; background-image: url('images/triangles (no curve labels)/excitement (45).png'); background-size: 0,0;}
 
-.excitement{
-  transform: rotate(-45deg);
-  left: 100px;
-  top: -168px;
-  background-image: url('images/triangles (no curve labels)/excitement (45).png');
-  background-size: 0,0;
-}
+.release{max-width: 24.6%; max-height: 500px; left: 25.1%; background-image: url('images/triangles (no curve labels)/orange (0).png'); background-size: 0,0;}
 
-.wedge{
-position: absolute;
-}
+.sociability{max-width: 37.7%; max-height: 500px; left: 37.6%; background-image: url('images/triangles (no curve labels)/yellow (-45).png'); background-size: 0,0;}
 
-.wedge > img{
-  height: 100%;
-  width: 100%;
-}
+.status{max-width: 37.7%; max-height: 530px; margin-top: 14.1%; background-image: url('images/triangles (no curve labels)/purple (90).png'); background-size: 0,0;}
 
-.motivations{
-  position: absolute;
-  text-align: center;
-  display: none;
-}
+.belonging{max-width: 37.7%; max-height: 530px; margin-top: 13.5%; left: 37.7%; background-image: url('images/triangles (no curve labels)/brown (-90).png'); background-size: 0,0;}
 
-.descriptions{
-  position: absolute;
-  /* display: block; */
-}
+.recognition{max-width: 37.7%; max-height: 500px; margin-top: 29.4%; background-image: url('images/triangles (no curve labels)/green (135).png'); background-size: 0,0;}
 
-.descriptions > p{
+.control{max-width: 24.6%; max-height: 500px; margin-top: 29.4%; left: 25.7%; background-image: url('images/triangles (no curve labels)/black (-180).png'); background-size: 0,0;}
 
-}
+.comfort{max-width: 37.7%; max-height: 500px; margin-top: 29.4%; left: 37.8%; background-image: url('images/triangles (no curve labels)/blue (-135).png'); background-size: 0,0;}
 
-.release > h3 {top: 20%; left: 0; right: 0;}
-/* .release > .descriptions{position: absolute; top: 0px; left: 5px; width: 0px; height: 0px; border-style: inset; border-width: 500px 200px 0px 200px; border-color: pink transparent transparent transparent;} */
-.release > .descriptions{top: 0px; left: 5px; width: 300px; height: 300px; overflow: hidden; text-align: justify; -webkit-shape-inside: polygon(100% 20% 20%);}
-/* .release > .descriptions > span{position: absolute; text-align: center; top:-500px;} */
+.wedge{position: absolute;}
 
+.wedge > img{height: 100%; width: 100%;}
+
+.motivations{position: absolute;  text-align: center; display: block;}
+
+.descriptions{position: absolute; display: none; z-index: 150;}
+
+.descriptions > p{}
+
+.release > h3 {color: #e7ac4d; top: 10%; left: 0; right: 0;}
+.release > .descriptions{top: 0px; left: 5px; width: 300px; height: 300px; overflow: hidden; -webkit-shape-inside: polygon(100% 20% 20%);}
 .release > .descriptions > h4{position: relative;top: 0px; text-align: center;}
 .release > .descriptions > p{position: relative; text-align: center;}
 
-.sociability > h3 {top: 30%; left: 0; right: 0;}
-.sociability > h3, .sociability > .descriptions {transform: rotate(-45deg);}
+.sociability > h3 {color: #fcd04d; top: 25%; left: 0; right: 0;}
+.sociability > h3, .sociability > .descriptions {}
 .sociability > .descriptions{width: 80%; top: 25%; left: 15%; right: 0;}
 .sociability > .descriptions > h4{text-align: center;}
 
-.belonging > h3 {top: 30%; left: 0; right: 0;}
-.belonging > h3, .belonging > .descriptions {transform: rotate(-90deg);}
+.belonging > h3 {color: #b1955e; top: 35%; left: 40%; right: 0;}
+.belonging > h3, .belonging > .descriptions {}
 .belonging > .descriptions{width: 60%; top: 15%; left: 20%;}
 .belonging > .descriptions > h4{text-align: center;}
 
-.comfort > h3 {top: 40%; left: 0; right: 0;}
-.comfort > h3, .comfort > .descriptions {transform: rotate(-135deg);}
+.comfort > h3 {color: #4e9ad2; top: 45%; left: 0; right: 0;}
+.comfort > h3, .comfort > .descriptions {}
 .comfort > .descriptions {width: 65%; top: 25%; left: 20%;}
 .comfort > .descriptions > h4 {text-align: center;}
 
-.control > h3 {top: 20%; left: 0; right: 0;}
-.control > h3, .control > .descriptions {transform: rotate(-180deg);}
+.control > h3 {color: #4d4d4d; top: 60%; left: 0; right: 0;}
+.control > h3, .control > .descriptions {}
 .control > .descriptions{top: 5%; left: 20%;}
 .control > .descriptions > h4 {text-align: center;}
 
-.recognition > h3 {top: 40%; left: 0; right: 0;}
-.recognition > h3, .recognition > .descriptions {transform: rotate(135deg);}
+.recognition > h3 {color: #94cc8a; top: 50%; left: 0; right: 0;}
+.recognition > h3, .recognition > .descriptions {}
 .recognition > .descriptions{top: 20%; left: 20%;}
 .recognition > .descriptions > h4 {text-align: center;}
 
-.status > h3 {top: 30%; left: 0; right: 0;}
-.status > h3, .status > .descriptions {transform: rotate(90deg);}
+.status > h3 {color: #9b6ebb; top: 35%; left: -40%; right: 0;}
+.status > h3, .status > .descriptions {}
 .status > .descriptions{top: 10%; left: 25%;}
 .status > .descriptions > h4 {text-align: center;}
 
-.excitement > h3 {top: 40%; left: 0; right: 0;}
-.excitement > h3, .excitement > .descriptions {transform: rotate(45deg);}
+.excitement > h3 {color: #d24d4d; top: 25%; left: 0; right: 0;}
+.excitement > h3, .excitement > .descriptions {}
 .excitement > .descriptions{top: 20%; left: 20%;}
 .excitement > .descriptions > h4 {text-align: center;}
 
-.centrecap{height: 20%; width: 20%; position: absolute; top: 39%; left: 41.5%; z-index: 100;}
-.centrecap > img {transform: scale(0.8);}
-.centrecap > h3 {position: absolute; top: 20%; left: 15%; width: 50%;text-align: center;}
+.centrecap{max-width: 14%; position: absolute; margin-top: 22%; left: 31%; z-index: 100; text-align: center;}
+.centrecap > img {position: relative; width: 100%;}
+.centrecap > h3 {position: absolute; top: 10%; left: 17%; width: 60%; text-align: center;}
