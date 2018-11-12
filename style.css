@@ -96,7 +96,8 @@ p{font-family: Courier; font-size: 1vw; font-weight: 500;margin-block-start: 0; 
 
 .centrecap{max-width: 14%; position: absolute; margin-top: 22%; left: 31%; z-index: 100; text-align: center;}
 .centrecap > img {position: relative; width: 100%;}
-.centrecap > h3 {position: absolute; top: 10%; left: 17%; width: 60%; text-align: center; z-index:200;}
+.centrecap > button {font-family: 'LiberatorH';font-size: 2vw; position: absolute; color: #4d4d4d; top: 10%; left: 12%; right: 0; width: 10vw; height: 10vw; background-color: rgba(0,0,0,0); border: none;}
+
 
 /* Media Queries */
 @media screen and (min-width: 1600px) {
