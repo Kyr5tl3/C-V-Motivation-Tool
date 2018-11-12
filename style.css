@@ -40,53 +40,56 @@ p{font-family: Courier; font-size: 1vw; font-weight: 500;margin-block-start: 0; 
 
 .descriptions{position: absolute; z-index: 150; display: none;}
 
-.release > h2 {color: #e7ac4d; top: 10%; left: 0; right: 0;}
+.release > button {font-family: 'LiberatorH';font-size: 2vw; color: #e7ac4d; top: 2%; left: 20%; right: 0; width: 15vw; height: 10vw; background-color: rgba(0,0,0,0); border: none; cursor: pointer;}
+.release > button:hover{text-decoration: underline; color: #825102;}
 .release > .descriptions{text-align: center; top: 3%; text-align: center;}
 .release > .descriptions > h4{margin-left: 10%; margin-right: 10%;}
 .release > .descriptions > p:nth-child(2n){margin-left: 13%; margin-right: 13%;}
 .release > .descriptions > p:nth-child(3n){margin-left: 17%; margin-right: 17%;}
 .release > .descriptions > p:nth-child(4n){margin-left: 22%; margin-right: 22%;}
 
+.sociability > button {font-family: 'LiberatorH';font-size: 2vw; color: #fcd04d; top: 15%; left: 40%; right: 0; width: 16vw; height: 10vw; background-color: rgba(0,0,0,0); border: none; cursor: pointer;}
+.sociability > button:hover{text-decoration: underline; color: #af8404;}
 .sociability > h2 {color: #fcd04d; top: 25%; left: 0; right: 0;}
 .sociability > h2, .sociability > .descriptions {}
 .sociability > .descriptions{top: 10%; left: 30%; right: 0;}
 .sociability > .descriptions > h4{text-align: center; width: 80%;}
 .sociability > .descriptions > p{text-align: left; width: 95%;}
 
-.belonging > h2 {color: #b1955e; top: 35%; left: 40%; right: 0;}
-.belonging > h2, .belonging > .descriptions {}
+.belonging > button {font-family: 'LiberatorH';font-size: 2vw; color: #b1955e; top: 33%; left: 50%; right: 0; width: 15vw; height: 10vw; background-color: rgba(0,0,0,0); border: none; cursor: pointer;}
+.belonging > button:hover{text-decoration: underline; color: #3e331e;}
 .belonging > .descriptions{top: 35%; left: 42%;}
 .belonging > .descriptions > h4{text-align: center; width: 70%;}
 .belonging > .descriptions > p{text-align: left; width: 98%;}
 
-.comfort > h2 {color: #4e9ad2; top: 45%; left: 0; right: 0;}
-.comfort > h2, .comfort > .descriptions {}
+.comfort > button {font-family: 'LiberatorH';font-size: 2vw; color: #4e9ad2; top: 50%; left: 35%; right: 0; width: 15vw; height: 10vw; background-color: rgba(0,0,0,0); border: none; cursor: pointer;}
+.comfort > button:hover{text-decoration: underline; color: #052741;}
 .comfort > .descriptions {top: 52%; left: 32%;}
 .comfort > .descriptions > h4 {text-align: center; width: 55%;}
 .comfort > .descriptions > p {text-align: left; width: 95%;}
 
-.control > h2 {color: #4d4d4d; top: 60%; left: 0; right: 0;}
+.control > button {font-family: 'LiberatorH';font-size: 2vw; color: #4d4d4d; top: 60%; left: 20%; right: 0; width: 15vw; height: 10vw; background-color: rgba(0,0,0,0); border: none; cursor: pointer;}
+.control > button:hover{text-decoration: underline; color: #161515;}
 .control > .descriptions{text-align: center; top: 50%; text-align: center;}
 .control > .descriptions > h4{margin-left: 22%; margin-right: 22%;}
 .control > .descriptions > p:nth-child(2n){margin-left: 19%; margin-right: 19%;}
 .control > .descriptions > p:nth-child(3n){margin-left: 12%; margin-right: 12%;}
 .control > .descriptions > p:nth-child(4n){margin-left: 12%; margin-right: 12%;}
 
-.recognition > h2 {color: #94cc8a; top: 50%; left: 0; right: 0;}
-.recognition > h2, .recognition > .descriptions {}
+.recognition > button {font-family: 'LiberatorH';font-size: 2vw; color: #94cc8a; top: 50%; left: 25%; right: 0; width: 15vw; height: 10vw; background-color: rgba(0,0,0,0); border: none; cursor: pointer;}
+.recognition > button:hover{text-decoration: underline; color: #30442c;}
 .recognition > .descriptions{top: 55%; left: 3%;}
 .recognition > .descriptions > h4 {text-align: center; width: 75%;}
 .recognition > .descriptions > p {text-align: left; width: 75%;}
 
-.status > h2 {color: #9b6ebb; top: 35%; left: -40%; right: 0;}
-.status > h2, .status > .descriptions {}
+.status > button {font-family: 'LiberatorH';font-size: 2vw; color: #9b6ebb; top: 33%; left: 7%; right: 0; width: 15vw; height: 10vw; background-color: rgba(0,0,0,0); border: none; cursor: pointer;}
+.status > button:hover{text-decoration: underline; color: #3a2647;}
 .status > .descriptions{top: 30%; left: 3%;}
 .status > .descriptions > h4 {text-align: center;  width: 60%;}
 .status > .descriptions > p {text-align: left; width: 60%;}
 
-.excitement > button {font-family: 'LiberatorH';font-size: 2vw; color: #d24d4d; top: 15%; left: 20%; right: 0; width: 15vw; height: 10vw; background-color: rgba(0,0,0,0); border: solid black 1px; cursor: pointer;}
+.excitement > button {font-family: 'LiberatorH';font-size: 2vw; color: #d24d4d; top: 15%; left: 20%; right: 0; width: 15vw; height: 10vw; background-color: rgba(0,0,0,0); border: none; cursor: pointer;}
 .excitement > button:hover{text-decoration: underline; color: #731111;}
-.excitement > h2, .excitement > .descriptions {}
 .excitement > .descriptions{top: 10%; left: 3%;}
 .excitement > .descriptions > h4 {text-align: center; width: 70%;}
 .excitement > .descriptions > p {text-align: left; width: 65%;}
