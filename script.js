@@ -1,6 +1,38 @@
 
 $('.wedge > img').css({'opacity':'1'});
 
+// on load
+$(window).on('load', function(){
+  toolHeight();
+  textResize();
+});
+
+// on resize
+$(window).resize( function(){
+  toolHeight();
+  textResize();
+});
+
+// set height of motivational tool div
+function toolHeight() {
+    let width = $('.motivationtool').width();
+    let height = width * 0.78 + 'px';
+    $('.motivationtool').css({'height':height});
+};
+
+// resize text
+function textResize(){
+  let width = $('.motivationtool').width();
+  let h4FontSize = width * 0.018 +'px';
+  let buttonFontSize = width * 0.03 + 'px';
+  let centrecapFontSize = width * 0.024 +'px';
+
+  $('.caps > h4').css({'font-size':h4FontSize});
+  $('.wedge > button').css({'font-size':buttonFontSize});
+  $('.centrecap > button').css({'font-size':centrecapFontSize});
+
+}
+
 //Release button functions
 $('.release > button').click(function(){
   event.preventDefault();
