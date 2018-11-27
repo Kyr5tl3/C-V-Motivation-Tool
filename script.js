@@ -5,12 +5,14 @@ $('.wedge > img').css({'opacity':'1'});
 $(window).on('load', function(){
   toolHeight();
   textResize();
+  selectedCapSize();
 });
 
 // on resize
 $(window).resize( function(){
   toolHeight();
   textResize();
+  selectedCapSize()
 });
 
 // set height of motivational tool div
@@ -20,22 +22,55 @@ function toolHeight() {
     $('.motivationtool').css({'height':height});
 };
 
+// set size of selected caps
+function selectedCapSize() {
+    let width = $('.motivationtool').width();
+    let capWidth = width * 0.05 + 'px';
+    $('.selected').css({'width':capWidth});
+};
+
 // resize text
 function textResize(){
   let width = $('.motivationtool').width();
   let h4FontSize = width * 0.018 +'px';
   let buttonFontSize = width * 0.03 + 'px';
   let centrecapFontSize = width * 0.024 +'px';
+  let descriptionsFontSize  = width * 0.014 +'px';
 
   $('.caps > h4').css({'font-size':h4FontSize});
+  $('.descriptions > h4').css({'font-size':h4FontSize});
   $('.wedge > button').css({'font-size':buttonFontSize});
   $('.centrecap > button').css({'font-size':centrecapFontSize});
-
+  $('.descriptions > p').css({'font-size':descriptionsFontSize});
 }
+
+// WEDGE SELECTION
+//Excitement button functions
+$('.excitement > button').click(function(){
+  event.preventDefault();
+  $('.excitement > .selected').show();
+  $('.wedge > button').hide();
+  $('.caps').hide();
+  $('.release > .descriptions').show();
+  $('.excitement > .descriptions').show();
+  $('.status > .descriptions').show();
+  $('.recognition > .descriptions').show();
+  $('.centrecap > button').html('RESTART');
+  $('.centrecap > button').addClass('centrecapRestart');
+  $('.sociability > img').css({'opacity':'0.1'});
+  $('.control > img').css({'opacity':'0.1'});
+  $('.comfort > img').css({'opacity':'0.1'});
+  $('.belonging > img').css({'opacity':'0.1'});
+  $('.excitement > .descriptions > h4').css({'color':'#052741'});
+  $('.release > img').css({'opacity':'0.7'});
+  $('.status > img').css({'opacity':'0.7'});
+  $('.recognition > img').css({'opacity':'0.7'});
+});
 
 //Release button functions
 $('.release > button').click(function(){
   event.preventDefault();
+  $('.release > .selected').show();
   $('.wedge > button').hide();
   $('.caps').hide();
   $('.release > .descriptions').show();
@@ -48,7 +83,6 @@ $('.release > button').click(function(){
   $('.control > img').css({'opacity':'0.1'});
   $('.comfort > img').css({'opacity':'0.1'});
   $('.belonging > img').css({'opacity':'0.1'});
-  $('.release').css({'background-size':'cover'});
   $('.release > .descriptions > h4').css({'color':'#825102'});
   $('.sociability > img').css({'opacity':'0.7'});
   $('.excitement > img').css({'opacity':'0.7'});
@@ -57,6 +91,7 @@ $('.release > button').click(function(){
 //Sociability button functions
 $('.sociability > button').click(function(){
   event.preventDefault();
+  $('.sociability > .selected').show();
   $('.wedge > button').hide();
   $('.caps').hide();
   $('.sociability > .descriptions').show();
@@ -69,7 +104,6 @@ $('.sociability > button').click(function(){
   $('.recognition > img').css({'opacity':'0.1'});
   $('.control > img').css({'opacity':'0.1'});
   $('.comfort > img').css({'opacity':'0.1'});
-  $('.sociability').css({'background-size':'cover'});
   $('.sociability > .descriptions > h4').css({'color':'#af8404'});
   $('.release > img').css({'opacity':'0.7'});
   $('.excitement > img').css({'opacity':'0.7'});
@@ -80,6 +114,7 @@ $('.sociability > button').click(function(){
 //Belonging button functions
 $('.belonging > button').click(function(){
   event.preventDefault();
+  $('.belonging > .selected').show();
   $('.wedge > button').hide();
   $('.caps').hide();
   $('.sociability > .descriptions').show();
@@ -92,7 +127,6 @@ $('.belonging > button').click(function(){
   $('.status > img').css({'opacity':'0.1'});
   $('.recognition > img').css({'opacity':'0.1'});
   $('.control > img').css({'opacity':'0.1'});
-  $('.belonging').css({'background-size':'cover'});
   $('.belonging > .descriptions > h4').css({'color':'#3e331e'});
   $('.sociability > img').css({'opacity':'0.7'});
   $('.comfort > img').css({'opacity':'0.7'});
@@ -101,6 +135,7 @@ $('.belonging > button').click(function(){
 //Comfort button functions
 $('.comfort > button').click(function(){
   event.preventDefault();
+  $('.comfort > .selected').show();
   $('.wedge > button').hide();
   $('.caps').hide();
   $('.recognition > .descriptions').show();
@@ -113,7 +148,6 @@ $('.comfort > button').click(function(){
   $('.excitement > img').css({'opacity':'0.1'});
   $('.release > img').css({'opacity':'0.1'});
   $('.sociability > img').css({'opacity':'0.1'});
-  $('.comfort').css({'background-size':'cover'});
   $('.comfort > .descriptions > h4').css({'color':'#052741'});
   $('.control > img').css({'opacity':'0.7'});
   $('.recognition > img').css({'opacity':'0.7'});
@@ -123,6 +157,7 @@ $('.comfort > button').click(function(){
 //Control button functions
 $('.control > button').click(function(){
   event.preventDefault();
+  $('.control > .selected').show();
   $('.wedge > button').hide();
   $('.caps').hide();
   $('.recognition > .descriptions').show();
@@ -135,7 +170,6 @@ $('.control > button').click(function(){
   $('.release > img').css({'opacity':'0.1'});
   $('.sociability > img').css({'opacity':'0.1'});
   $('.belonging > img').css({'opacity':'0.1'});
-  $('.control').css({'background-size':'cover'});
   $('.control > .descriptions > h4').css({'color':'#052741'});
   $('.comfort > img').css({'opacity':'0.7'});
   $('.recognition > img').css({'opacity':'0.7'});
@@ -144,6 +178,7 @@ $('.control > button').click(function(){
 //Recognition button functions
 $('.recognition > button').click(function(){
   event.preventDefault();
+  $('.recognition > .selected').show();
   $('.wedge > button').hide();
   $('.caps').hide();
   $('.recognition > .descriptions').show();
@@ -156,7 +191,6 @@ $('.recognition > button').click(function(){
   $('.release > img').css({'opacity':'0.1'});
   $('.sociability > img').css({'opacity':'0.1'});
   $('.belonging > img').css({'opacity':'0.1'});
-  $('.recognition').css({'background-size':'cover'});
   $('.recognition > .descriptions > h4').css({'color':'#052741'});
   $('.excitement > img').css({'opacity':'0.7'});
   $('.status > img').css({'opacity':'0.7'});
@@ -167,6 +201,7 @@ $('.recognition > button').click(function(){
 //Status button functions
 $('.status > button').click(function(){
   event.preventDefault();
+  $('.status > .selected').show();
   $('.wedge > button').hide();
   $('.caps').hide();
   $('.status > .descriptions').show();
@@ -179,33 +214,11 @@ $('.status > button').click(function(){
   $('.control > img').css({'opacity':'0.1'});
   $('.comfort > img').css({'opacity':'0.1'});
   $('.belonging > img').css({'opacity':'0.1'});
-  $('.status').css({'background-size':'cover'});
   $('.status > .descriptions > h4').css({'color':'#052741'});
   $('.excitement > img').css({'opacity':'0.7'});
   $('.recognition > img').css({'opacity':'0.7'});
 });
 
-//Excitement button functions
-$('.excitement > button').click(function(){
-  event.preventDefault();
-  $('.wedge > button').hide();
-  $('.caps').hide();
-  $('.release > .descriptions').show();
-  $('.excitement > .descriptions').show();
-  $('.status > .descriptions').show();
-  $('.recognition > .descriptions').show();
-  $('.centrecap > button').html('RESTART');
-  $('.centrecap > button').addClass('centrecapRestart');
-  $('.sociability > img').css({'opacity':'0.1'});
-  $('.control > img').css({'opacity':'0.1'});
-  $('.comfort > img').css({'opacity':'0.1'});
-  $('.belonging > img').css({'opacity':'0.1'});
-  $('.excitement').css({'background-size':'cover'});
-  $('.excitement > .descriptions > h4').css({'color':'#052741'});
-  $('.release > img').css({'opacity':'0.7'});
-  $('.status > img').css({'opacity':'0.7'});
-  $('.recognition > img').css({'opacity':'0.7'});
-});
 
 // Reset button headings
 $('.centrecap > button').click(function(){
@@ -214,28 +227,9 @@ $('.centrecap > button').click(function(){
   $('button').show();
   $('.caps').show();
   $('.descriptions').hide();
+  $('.selected').hide();
   $('.centrecap > button').removeClass('centrecapRestart');
   $('.wedge').css({'background-size':'0,0'});
   $('.wedge > img').css({'opacity':'1'});
   $('.wedge > .descriptions > h4').css({'color':'rgb(0,0,0)'});
 });
-
-
-
-
-//Sociability button functions
-// $('.sociability > button').click(function(){
-//   event.preventDefault();
-//   $('.wedge > button').hide();
-//   $('.caps').hide();
-//   $('.sociability > .descriptions').show();
-//   $('.belonging > .descriptions').show();
-//   $('.release > .descriptions').show();
-//   $('.excitement > .descriptions').show();
-//   $('.centrecap > button').html('RESTART');
-//   $('.centrecap > button').addClass('centrecapRestart');
-//   $('.status > img').css({'opacity':'0.1'});
-//   $('.recognition > img').css({'opacity':'0.1'});
-//   $('.control > img').css({'opacity':'0.1'});
-//   $('.comfort > img').css({'opacity':'0.1'});
-// });
