@@ -4,7 +4,6 @@
 
 h2{font-family: 'LiberatorH';font-size: 30px;}
 h3{font-family: 'LiberatorH';font-size: 28px; color: #4d4d4d}
-h4{}
 
 p{font-family: Courier; font-size: 1vw; font-weight: 500;margin-block-start: 0; margin-block-end: 0;}
 
@@ -20,16 +19,17 @@ p{font-family: Courier; font-size: 1vw; font-weight: 500;margin-block-start: 0; 
 
 .descriptions{position: absolute; z-index: 150; display: none;}
 .descriptions > h4{font-family: 'LiberatorH';font-size: 18px; font-weight: 1000; margin-block-start: 0; margin-block-end: 0.5vw;}
+.descriptions > p{line-height: 1em;}
 
-.caps{font-family: 'LiberatorH'; position: absolute; width: 30%; z-index: 100; text-align: center; color: #e9e8e8; max-height: 150px;}
+.caps{font-family: 'LiberatorH'; position: absolute; width: 30%; z-index: 100; text-align: center; color: #e9e8e8; max-height: 150px; display: none;}
 .caps > img {position: relative; width: 100%;}
 .caps > button {font-size: 50%; position: absolute; color: #4d4d4d; top: 10%; left: 12%; right: 0; width: 10vw; height: 10vw; background-color: rgba(0,0,0,0); border: none;}
-.caps > h4{position: absolute; width: 64%;font-family: 'LiberatorH'; font-size: 18px; font-weight: 1000;}
+.caps > h4{position: absolute; width: 64%;font-family: 'LiberatorH'; font-size: 18px; font-weight: 1000; color: #e9e8e8;}
 
 .selected{position: absolute; width: 15%; z-index: 200; display: none;}
-.selected > img {position: relative; width: 100%;}
+.selected > img {display:flex; justify-content:center; align-items:center; width: 100%;}
 
-.excitement{width: 50%; max-height: 500px;}
+.excitement{width: 50%; max-height: 500px; display: none;}
 .excitement > button {color: #d24d4d; top: 15%; left: 33%; right: 0; width: 40%; height: 45%; }
 .excitement > button:hover{text-decoration: underline; color: #731111;}
 .excitement > .descriptions{top: 10%; left: 3%;}
@@ -39,7 +39,7 @@ p{font-family: Courier; font-size: 1vw; font-weight: 500;margin-block-start: 0; 
 .excitement > .caps > h4 {top: 10%; left: 15%;}
 .excitement > .selected {top: 70%; left: 78%;}
 
-.release{width: 32.6%; max-height: 500px; left: 33.4%;}
+.release{width: 32.6%; max-height: 500px; left: 33.4%; display: none;}
 .release > button {color: #e7ac4d; top: 2%; left: 20%; right: 0; width: 60%; height: 40%;}
 .release > button:hover{text-decoration: underline; color: #825102;}
 .release > .descriptions{text-align: center; top: 2%; text-align: center;}
@@ -49,7 +49,7 @@ p{font-family: Courier; font-size: 1vw; font-weight: 500;margin-block-start: 0; 
 .release > .descriptions > p:nth-child(4n){margin-left: 23%; margin-right: 23%;}
 .release > .selected {top: 61%; left: 44%;}
 
-.sociability{width: 50%; max-height: 500px; left: 50%;}
+.sociability{width: 50%; max-height: 500px; left: 50%; display: none;}
 .sociability > button {color: #fcd04d; top: 10%; left: 30%; width: 50%; height: 45%;}
 .sociability > button:hover{text-decoration: underline; color: #af8404;}
 .sociability > h2 {color: #fcd04d; top: 25%; left: 0; right: 0;}
@@ -61,7 +61,7 @@ p{font-family: Courier; font-size: 1vw; font-weight: 500;margin-block-start: 0; 
 .sociability > .caps > h4 {top: 10%; left: 17%;}
 .sociability > .selected {top: 70%; left: 13%;}
 
-.status{width: 50%; max-height: 530px; margin-top: 18.6%;}
+.status{width: 50%; max-height: 530px; margin-top: 18.6%; display: none;}
 .status > button {color: #9b6ebb; top: 30%; left: 25%; right: 0; width: 40%; height: 40%;}
 .status > button:hover{text-decoration: underline; color: #3a2647;}
 .status > .descriptions{top: 26%; left: 3%;}
@@ -71,7 +71,7 @@ p{font-family: Courier; font-size: 1vw; font-weight: 500;margin-block-start: 0; 
 .status > .caps > h4 {top: 17%; left: 15%;}
 .status > .selected {top: 42.5%; left: 72%;}
 
-.belonging{width: 50%; max-height: 530px; margin-top: 17.9%; left: 50%;}
+.belonging{width: 50%; max-height: 530px; margin-top: 17.9%; left: 50%; display: none;}
 .belonging > button {color: #b1955e; top: 30%; left: 40%; right: 0; width: 40%; height: 40%;}
 .belonging > button:hover{text-decoration: underline; color: #3e331e;}
 .belonging > .descriptions{top: 26%; left: 42%;}
@@ -79,7 +79,7 @@ p{font-family: Courier; font-size: 1vw; font-weight: 500;margin-block-start: 0; 
 .belonging > .descriptions > p{text-align: left; width: 98%;}
 .belonging > .selected {top: 44.5%; left: 19%;}
 
-.recognition{width: 50.2%; max-height: 500px; margin-top: 38.8%;}
+.recognition{width: 50.2%; max-height: 500px; margin-top: 38.8%; display: none;}
 .recognition > button {color: #94cc8a; top: 40%; left: 30%; right: 0; width: 45%; height: 40%;}
 .recognition > button:hover{text-decoration: underline; color: #30442c;}
 .recognition > .descriptions{top: 50%; left: 3%;}
@@ -89,7 +89,7 @@ p{font-family: Courier; font-size: 1vw; font-weight: 500;margin-block-start: 0; 
 .recognition > .caps > h4 {top: 5%; left: 15%;}
 .recognition > .selected {top: 15%; left: 79%;}
 
-.control{width: 32.6%; max-height: 500px; left: 34.25%; margin-top: 38.95%;}
+.control{width: 32.6%; max-height: 500px; left: 34.25%; margin-top: 38.95%; display: none;}
 .control > button {color: #4d4d4d; top: 55%; left: 20%; right: 0; width: 60%; height: 40%;}
 .control > button:hover{text-decoration: underline; color: #161515;}
 .control > .descriptions{text-align: center; top: 50%; text-align: center;}
@@ -99,7 +99,7 @@ p{font-family: Courier; font-size: 1vw; font-weight: 500;margin-block-start: 0; 
 .control > .descriptions > p:nth-child(4n){margin-left: 10%; margin-right: 10%;}
 .control > .selected {top: 23%; left: 42%;}
 
-.comfort{width: 49.7%; max-height: 500px; left: 50.3%; margin-top: 39.1%;}
+.comfort{width: 49.7%; max-height: 500px; left: 50.3%; margin-top: 39.1%; display: none;}
 .comfort > button {color: #4e9ad2; top: 35%; left: 25%; right: 0; width: 48%; height: 45%;}
 .comfort > button:hover{text-decoration: underline; color: #052741;}
 .comfort > .descriptions {top: 50%; left: 33%;}
@@ -110,8 +110,26 @@ p{font-family: Courier; font-size: 1vw; font-weight: 500;margin-block-start: 0; 
 .comfort > .selected {top: 15%; left: 13%;}
 
 
-.centrecap{max-width: 18%; position: absolute; top: 38%; left: 41.5%; z-index: 100; text-align: center;}
+.centrecap{max-width: 18%; position: absolute; top: 38%; left: 41.5%; z-index: 100; text-align: center; display: none;}
 .centrecap > img {position: relative; width: 100%;}
 .centrecap > button {font-family: 'LiberatorH';font-size: 2vw; position: absolute; color: #4d4d4d; top: 7%; left: 10%; width: 75%; height: 80%; background-color: rgba(0,0,0,0); border: none;}
 
 .centrecapRestart:hover{text-decoration: underline; cursor: pointer; color: #161515;z-index: 500;}
+
+/* ANIMATIONS */
+/* Grow  */
+.grow:hover {-webkit-transform: scale(1.1); -ms-transform: scale(1.1);transform: scale(1.1);}
+
+/* Pulse */
+.pulse {border-radius: 50%; box-shadow: 0 0 0 rgba(255, 255, 255, 0.4); animation: pulse 2s infinite;}
+
+@-webkit-keyframes pulse {
+  0% {-webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.8);}
+  70% {-webkit-box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);}
+  100% {-webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);}
+}
+@keyframes pulse {
+  0% {-moz-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4); box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.8);}
+  70% {-moz-box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);}
+  100% {-moz-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);}
+}

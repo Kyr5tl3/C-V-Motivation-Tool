@@ -6,6 +6,7 @@ $(window).on('load', function(){
   toolHeight();
   textResize();
   selectedCapSize();
+  displayTool();
 });
 
 // on resize
@@ -48,19 +49,19 @@ function textResize(){
 //Excitement button functions
 $('.excitement > button').click(function(){
   event.preventDefault();
-  $('.excitement > .selected').show();
+  $('.excitement > .selected').show().addClass('pulse');
   $('.wedge > button').hide();
   $('.caps').hide();
-  $('.release > .descriptions').show();
-  $('.excitement > .descriptions').show();
-  $('.status > .descriptions').show();
-  $('.recognition > .descriptions').show();
+  $('.release > .descriptions').delay(1000).fadeIn(1000);
+  $('.excitement > .descriptions').fadeIn(1000);
+  $('.status > .descriptions').delay(1000).fadeIn(1000);
+  $('.recognition > .descriptions').delay(1000).fadeIn(1000);
   $('.centrecap > button').html('RESTART');
-  $('.centrecap > button').addClass('centrecapRestart');
-  $('.sociability > img').css({'opacity':'0.1'});
-  $('.control > img').css({'opacity':'0.1'});
-  $('.comfort > img').css({'opacity':'0.1'});
-  $('.belonging > img').css({'opacity':'0.1'});
+  $('.centrecap > button').addClass('centrecapRestart grow');
+  $('.sociability > img').fadeTo('slow',0.1);
+  $('.control > img').fadeTo('slow',0.1);
+  $('.comfort > img').fadeTo('slow',0.1);
+  $('.belonging > img').fadeTo('slow',0.1);
   $('.excitement > .descriptions > h4').css({'color':'#052741'});
   $('.release > img').css({'opacity':'0.7'});
   $('.status > img').css({'opacity':'0.7'});
@@ -70,14 +71,14 @@ $('.excitement > button').click(function(){
 //Release button functions
 $('.release > button').click(function(){
   event.preventDefault();
-  $('.release > .selected').show();
+  $('.release > .selected').show().addClass('pulse');
   $('.wedge > button').hide();
   $('.caps').hide();
-  $('.release > .descriptions').show();
-  $('.excitement > .descriptions').show();
-  $('.sociability > .descriptions').show();
+  $('.release > .descriptions').fadeIn(1000);
+  $('.excitement > .descriptions').delay(1000).fadeIn(1000);
+  $('.sociability > .descriptions').delay(1000).fadeIn(1000);
   $('.centrecap > button').html('RESTART');
-  $('.centrecap > button').addClass('centrecapRestart');
+  $('.centrecap > button').addClass('centrecapRestart grow');
   $('.status > img').css({'opacity':'0.1'});
   $('.recognition > img').css({'opacity':'0.1'});
   $('.control > img').css({'opacity':'0.1'});
@@ -91,15 +92,15 @@ $('.release > button').click(function(){
 //Sociability button functions
 $('.sociability > button').click(function(){
   event.preventDefault();
-  $('.sociability > .selected').show();
+  $('.sociability > .selected').show().addClass('pulse');
   $('.wedge > button').hide();
   $('.caps').hide();
-  $('.sociability > .descriptions').show();
-  $('.belonging > .descriptions').show();
-  $('.release > .descriptions').show();
-  $('.excitement > .descriptions').show();
+  $('.sociability > .descriptions').fadeIn(1000);
+  $('.belonging > .descriptions').delay(1000).fadeIn(1000);
+  $('.release > .descriptions').delay(1000).fadeIn(1000);
+  $('.excitement > .descriptions').delay(1000).fadeIn(1000);
   $('.centrecap > button').html('RESTART');
-  $('.centrecap > button').addClass('centrecapRestart');
+  $('.centrecap > button').addClass('centrecapRestart grow');
   $('.status > img').css({'opacity':'0.1'});
   $('.recognition > img').css({'opacity':'0.1'});
   $('.control > img').css({'opacity':'0.1'});
@@ -114,14 +115,14 @@ $('.sociability > button').click(function(){
 //Belonging button functions
 $('.belonging > button').click(function(){
   event.preventDefault();
-  $('.belonging > .selected').show();
+  $('.belonging > .selected').show().addClass('pulse');
   $('.wedge > button').hide();
   $('.caps').hide();
-  $('.sociability > .descriptions').show();
-  $('.belonging > .descriptions').show();
-  $('.comfort > .descriptions').show();
+  $('.sociability > .descriptions').delay(1000).fadeIn(1000);
+  $('.belonging > .descriptions').fadeIn(1000);
+  $('.comfort > .descriptions').delay(1000).fadeIn(1000);
   $('.centrecap > button').html('RESTART');
-  $('.centrecap > button').addClass('centrecapRestart');
+  $('.centrecap > button').addClass('centrecapRestart grow');
   $('.release > img').css({'opacity':'0.1'});
   $('.excitement > img').css({'opacity':'0.1'});
   $('.status > img').css({'opacity':'0.1'});
@@ -135,15 +136,15 @@ $('.belonging > button').click(function(){
 //Comfort button functions
 $('.comfort > button').click(function(){
   event.preventDefault();
-  $('.comfort > .selected').show();
+  $('.comfort > .selected').show().addClass('pulse');
   $('.wedge > button').hide();
   $('.caps').hide();
-  $('.recognition > .descriptions').show();
-  $('.control > .descriptions').show();
-  $('.comfort > .descriptions').show();
-  $('.belonging > .descriptions').show();
+  $('.recognition > .descriptions').delay(1000).fadeIn(1000);
+  $('.control > .descriptions').delay(1000).fadeIn(1000);
+  $('.comfort > .descriptions').fadeIn(1000);
+  $('.belonging > .descriptions').delay(1000).fadeIn(1000);
   $('.centrecap > button').html('RESTART');
-  $('.centrecap > button').addClass('centrecapRestart');
+  $('.centrecap > button').addClass('centrecapRestart grow');
   $('.status > img').css({'opacity':'0.1'});
   $('.excitement > img').css({'opacity':'0.1'});
   $('.release > img').css({'opacity':'0.1'});
@@ -157,20 +158,20 @@ $('.comfort > button').click(function(){
 //Control button functions
 $('.control > button').click(function(){
   event.preventDefault();
-  $('.control > .selected').show();
+  $('.control > .selected').show().addClass('pulse');
   $('.wedge > button').hide();
   $('.caps').hide();
-  $('.recognition > .descriptions').show();
-  $('.control > .descriptions').show();
-  $('.comfort > .descriptions').show();
+  $('.recognition > .descriptions').delay(1000).fadeIn(1000);
+  $('.control > .descriptions').fadeIn(1000);
+  $('.comfort > .descriptions').delay(1000).fadeIn(1000);
   $('.centrecap > button').html('RESTART');
-  $('.centrecap > button').addClass('centrecapRestart');
+  $('.centrecap > button').addClass('centrecapRestart grow');
   $('.status > img').css({'opacity':'0.1'});
   $('.excitement > img').css({'opacity':'0.1'});
   $('.release > img').css({'opacity':'0.1'});
   $('.sociability > img').css({'opacity':'0.1'});
   $('.belonging > img').css({'opacity':'0.1'});
-  $('.control > .descriptions > h4').css({'color':'#052741'});
+  $('.control > .descriptions > h4').css({'color':'#161515'});
   $('.comfort > img').css({'opacity':'0.7'});
   $('.recognition > img').css({'opacity':'0.7'});
 });
@@ -178,20 +179,20 @@ $('.control > button').click(function(){
 //Recognition button functions
 $('.recognition > button').click(function(){
   event.preventDefault();
-  $('.recognition > .selected').show();
+  $('.recognition > .selected').show().addClass('pulse');
   $('.wedge > button').hide();
   $('.caps').hide();
-  $('.recognition > .descriptions').show();
-  $('.control > .descriptions').show();
-  $('.comfort > .descriptions').show();
-  $('.status > .descriptions').show();
+  $('.recognition > .descriptions').fadeIn(1000);
+  $('.control > .descriptions').delay(1000).fadeIn(1000);
+  $('.comfort > .descriptions').delay(1000).fadeIn(1000);
+  $('.status > .descriptions').delay(1000).fadeIn(1000);
   $('.excitement > .descriptions').show();
   $('.centrecap > button').html('RESTART');
-  $('.centrecap > button').addClass('centrecapRestart');
+  $('.centrecap > button').addClass('centrecapRestart grow');
   $('.release > img').css({'opacity':'0.1'});
   $('.sociability > img').css({'opacity':'0.1'});
   $('.belonging > img').css({'opacity':'0.1'});
-  $('.recognition > .descriptions > h4').css({'color':'#052741'});
+  $('.recognition > .descriptions > h4').css({'color':'#30442c'});
   $('.excitement > img').css({'opacity':'0.7'});
   $('.status > img').css({'opacity':'0.7'});
   $('.control > img').css({'opacity':'0.7'});
@@ -201,20 +202,20 @@ $('.recognition > button').click(function(){
 //Status button functions
 $('.status > button').click(function(){
   event.preventDefault();
-  $('.status > .selected').show();
+  $('.status > .selected').show().addClass('pulse');
   $('.wedge > button').hide();
   $('.caps').hide();
-  $('.status > .descriptions').show();
-  $('.excitement > .descriptions').show();
-  $('.recognition > .descriptions').show();
+  $('.status > .descriptions').fadeIn(1000);
+  $('.excitement > .descriptions').delay(1000).fadeIn(1000);
+  $('.recognition > .descriptions').delay(1000).fadeIn(1000);
   $('.centrecap > button').html('RESTART');
-  $('.centrecap > button').addClass('centrecapRestart');
+  $('.centrecap > button').addClass('centrecapRestart grow');
   $('.release > img').css({'opacity':'0.1'});
   $('.sociability > img').css({'opacity':'0.1'});
   $('.control > img').css({'opacity':'0.1'});
   $('.comfort > img').css({'opacity':'0.1'});
   $('.belonging > img').css({'opacity':'0.1'});
-  $('.status > .descriptions > h4').css({'color':'#052741'});
+  $('.status > .descriptions > h4').css({'color':'#3a2647'});
   $('.excitement > img').css({'opacity':'0.7'});
   $('.recognition > img').css({'opacity':'0.7'});
 });
@@ -224,12 +225,31 @@ $('.status > button').click(function(){
 $('.centrecap > button').click(function(){
   event.preventDefault();
   $('.centrecap > button').html('CRAFT BRINGS THE SOUL BACK INTO BEER');
-  $('button').show();
+  $('button').fadeIn(1500);
   $('.caps').show();
   $('.descriptions').hide();
-  $('.selected').hide();
-  $('.centrecap > button').removeClass('centrecapRestart');
-  $('.wedge').css({'background-size':'0,0'});
-  $('.wedge > img').css({'opacity':'1'});
+  $('.selected').hide().removeClass('pulse');
+  $('.centrecap > button').removeClass('centrecapRestart grow');
+  $('.wedge > img').fadeTo('slow',1);
   $('.wedge > .descriptions > h4').css({'color':'rgb(0,0,0)'});
 });
+
+// ANIMATIONS
+// fade in on page load
+function displayTool(){
+  $('.excitement').fadeIn(3000);
+  $('.release').delay(250).fadeIn(3000);
+  $('.sociability').delay(500).fadeIn(3000);
+  $('.belonging').delay(750).fadeIn(3000);
+  $('.comfort').delay(1000).fadeIn(3000);
+  $('.control').delay(1250).fadeIn(3000);
+  $('.recognition').delay(1500).fadeIn(3000);
+  $('.status').delay(1750).fadeIn(3000);
+  $('.recognition').delay(2000).fadeIn(3000);
+  $('.excitement .caps').delay(2250).fadeIn(1000);
+  $('.sociability .caps').delay(2400).fadeIn(1000);
+  $('.status .caps').delay(2550).fadeIn(1000);
+  $('.recognition .caps').delay(2700).fadeIn(1000);
+  $('.comfort .caps').delay(2850).fadeIn(1000);
+  $('.centrecap').delay(2500).fadeIn(3000);
+};
