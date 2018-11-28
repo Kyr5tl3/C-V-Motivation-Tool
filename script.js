@@ -27,7 +27,7 @@ function toolHeight() {
 function selectedCapSize() {
     let width = $('.motivationtool').width();
     let capWidth = width * 0.05 + 'px';
-    $('.selected').css({'width':capWidth});
+    $('.selectedWedge').css({'width':capWidth});
 };
 
 // resize text
@@ -49,7 +49,9 @@ function textResize(){
 //Excitement button functions
 $('.excitement > button').click(function(){
   event.preventDefault();
-  $('.excitement > .selected').show().addClass('pulse');
+  $('.excitement > .selectedWedge').show();
+  $('.excitement > img').attr('src', '/images/segments with shadow/excitement - inner shadow.png');
+  $('.excitement > .descriptions > p').css({'color': 'white'});
   $('.wedge > button').hide();
   $('.caps').hide();
   $('.release > .descriptions').delay(1000).fadeIn(1000);
@@ -62,7 +64,7 @@ $('.excitement > button').click(function(){
   $('.control > img').fadeTo('slow',0.1);
   $('.comfort > img').fadeTo('slow',0.1);
   $('.belonging > img').fadeTo('slow',0.1);
-  $('.excitement > .descriptions > h4').css({'color':'#052741'});
+  $('.excitement > .descriptions > h4').css({'color':'#d24d4d'});
   $('.release > img').css({'opacity':'0.7'});
   $('.status > img').css({'opacity':'0.7'});
   $('.recognition > img').css({'opacity':'0.7'});
@@ -71,7 +73,9 @@ $('.excitement > button').click(function(){
 //Release button functions
 $('.release > button').click(function(){
   event.preventDefault();
-  $('.release > .selected').show().addClass('pulse');
+  $('.release > .selectedWedge').show();
+  $('.release > img').attr('src', '/images/segments with shadow/release - inner shadow.png');
+  $('.release > .descriptions > p').css({'color': 'white'});
   $('.wedge > button').hide();
   $('.caps').hide();
   $('.release > .descriptions').fadeIn(1000);
@@ -84,7 +88,7 @@ $('.release > button').click(function(){
   $('.control > img').css({'opacity':'0.1'});
   $('.comfort > img').css({'opacity':'0.1'});
   $('.belonging > img').css({'opacity':'0.1'});
-  $('.release > .descriptions > h4').css({'color':'#825102'});
+  $('.release > .descriptions > h4').css({'color':'#e7ac4d'});
   $('.sociability > img').css({'opacity':'0.7'});
   $('.excitement > img').css({'opacity':'0.7'});
 });
@@ -92,7 +96,9 @@ $('.release > button').click(function(){
 //Sociability button functions
 $('.sociability > button').click(function(){
   event.preventDefault();
-  $('.sociability > .selected').show().addClass('pulse');
+  $('.sociability > .selectedWedge').show();
+  $('.sociability > img').attr('src', '/images/segments with shadow/sociability - inner shadow.png');
+  $('.sociability > .descriptions > p').css({'color': 'white'});
   $('.wedge > button').hide();
   $('.caps').hide();
   $('.sociability > .descriptions').fadeIn(1000);
@@ -105,7 +111,7 @@ $('.sociability > button').click(function(){
   $('.recognition > img').css({'opacity':'0.1'});
   $('.control > img').css({'opacity':'0.1'});
   $('.comfort > img').css({'opacity':'0.1'});
-  $('.sociability > .descriptions > h4').css({'color':'#af8404'});
+  $('.sociability > .descriptions > h4').css({'color':'#fcd04d'});
   $('.release > img').css({'opacity':'0.7'});
   $('.excitement > img').css({'opacity':'0.7'});
   $('.belonging > img').css({'opacity':'0.7'});
@@ -115,7 +121,9 @@ $('.sociability > button').click(function(){
 //Belonging button functions
 $('.belonging > button').click(function(){
   event.preventDefault();
-  $('.belonging > .selected').show().addClass('pulse');
+  $('.belonging > .selectedWedge').show();
+  $('.belonging > img').attr('src', '/images/segments with shadow/belonging - inner shadow.png');
+  $('.belonging > .descriptions > p').css({'color': 'white'});
   $('.wedge > button').hide();
   $('.caps').hide();
   $('.sociability > .descriptions').delay(1000).fadeIn(1000);
@@ -128,7 +136,7 @@ $('.belonging > button').click(function(){
   $('.status > img').css({'opacity':'0.1'});
   $('.recognition > img').css({'opacity':'0.1'});
   $('.control > img').css({'opacity':'0.1'});
-  $('.belonging > .descriptions > h4').css({'color':'#3e331e'});
+  $('.belonging > .descriptions > h4').css({'color':'#b1955e'});
   $('.sociability > img').css({'opacity':'0.7'});
   $('.comfort > img').css({'opacity':'0.7'});
 });
@@ -136,7 +144,9 @@ $('.belonging > button').click(function(){
 //Comfort button functions
 $('.comfort > button').click(function(){
   event.preventDefault();
-  $('.comfort > .selected').show().addClass('pulse');
+  $('.comfort > .selectedWedge').show();
+  $('.comfort > img').attr('src', '/images/segments with shadow/comfort - inner shadow.png');
+  $('.comfort > .descriptions > p').css({'color': 'white'});
   $('.wedge > button').hide();
   $('.caps').hide();
   $('.recognition > .descriptions').delay(1000).fadeIn(1000);
@@ -149,7 +159,7 @@ $('.comfort > button').click(function(){
   $('.excitement > img').css({'opacity':'0.1'});
   $('.release > img').css({'opacity':'0.1'});
   $('.sociability > img').css({'opacity':'0.1'});
-  $('.comfort > .descriptions > h4').css({'color':'#052741'});
+  $('.comfort > .descriptions > h4').css({'color':'#4e9ad2'});
   $('.control > img').css({'opacity':'0.7'});
   $('.recognition > img').css({'opacity':'0.7'});
   $('.belonging > img').css({'opacity':'0.7'});
@@ -158,7 +168,9 @@ $('.comfort > button').click(function(){
 //Control button functions
 $('.control > button').click(function(){
   event.preventDefault();
-  $('.control > .selected').show().addClass('pulse');
+  $('.control > .selectedWedge').show();
+  $('.control > img').attr('src', '/images/segments with shadow/control - inner shadow.png');
+  $('.control > .descriptions > p').css({'color': 'white'});
   $('.wedge > button').hide();
   $('.caps').hide();
   $('.recognition > .descriptions').delay(1000).fadeIn(1000);
@@ -171,7 +183,7 @@ $('.control > button').click(function(){
   $('.release > img').css({'opacity':'0.1'});
   $('.sociability > img').css({'opacity':'0.1'});
   $('.belonging > img').css({'opacity':'0.1'});
-  $('.control > .descriptions > h4').css({'color':'#161515'});
+  $('.control > .descriptions > h4').css({'color':'#f2f2f2'});
   $('.comfort > img').css({'opacity':'0.7'});
   $('.recognition > img').css({'opacity':'0.7'});
 });
@@ -179,7 +191,9 @@ $('.control > button').click(function(){
 //Recognition button functions
 $('.recognition > button').click(function(){
   event.preventDefault();
-  $('.recognition > .selected').show().addClass('pulse');
+  $('.recognition > .selectedWedge').show();
+  $('.recognition > img').attr('src', '/images/segments with shadow/recognition - inner shadow.png');
+  $('.recognition > .descriptions > p').css({'color': 'white'});
   $('.wedge > button').hide();
   $('.caps').hide();
   $('.recognition > .descriptions').fadeIn(1000);
@@ -192,7 +206,7 @@ $('.recognition > button').click(function(){
   $('.release > img').css({'opacity':'0.1'});
   $('.sociability > img').css({'opacity':'0.1'});
   $('.belonging > img').css({'opacity':'0.1'});
-  $('.recognition > .descriptions > h4').css({'color':'#30442c'});
+  $('.recognition > .descriptions > h4').css({'color':'#94cc8a'});
   $('.excitement > img').css({'opacity':'0.7'});
   $('.status > img').css({'opacity':'0.7'});
   $('.control > img').css({'opacity':'0.7'});
@@ -202,7 +216,9 @@ $('.recognition > button').click(function(){
 //Status button functions
 $('.status > button').click(function(){
   event.preventDefault();
-  $('.status > .selected').show().addClass('pulse');
+  $('.status > .selectedWedge').show();
+  $('.status > img').attr('src', '/images/segments with shadow/status - inner shadow.png');
+  $('.status > .descriptions > p').css({'color': 'white'});
   $('.wedge > button').hide();
   $('.caps').hide();
   $('.status > .descriptions').fadeIn(1000);
@@ -215,24 +231,56 @@ $('.status > button').click(function(){
   $('.control > img').css({'opacity':'0.1'});
   $('.comfort > img').css({'opacity':'0.1'});
   $('.belonging > img').css({'opacity':'0.1'});
-  $('.status > .descriptions > h4').css({'color':'#3a2647'});
+  $('.status > .descriptions > h4').css({'color':'#9b6ebb'});
   $('.excitement > img').css({'opacity':'0.7'});
   $('.recognition > img').css({'opacity':'0.7'});
 });
 
+// Check which wedge is highlighted & reset img src that wedge
+function resetWedge(){
+  let highlightedWedge = $('img[src*="shadow"]').parent().prop('className');
+  if (highlightedWedge.indexOf("excitement") >= 0){
+    $('.excitement > img').attr('src', '/images/triangles (with curve labels)/excitement.png');
+  }
+  else if (highlightedWedge.indexOf("release") >= 0) {
+    $('.release > img').attr('src', '/images/triangles (with curve labels)/release.png');
+  }
+  else if (highlightedWedge.indexOf("sociability") >= 0) {
+    $('.sociability > img').attr('src', '/images/triangles (with curve labels)/sociability.png');
+  }
+  else if (highlightedWedge.indexOf("belonging") >= 0) {
+    $('.belonging > img').attr('src', '/images/triangles (with curve labels)/belonging.png');
+  }
+  else if (highlightedWedge.indexOf("comfort") >= 0) {
+    $('.comfort > img').attr('src', '/images/triangles (with curve labels)/comfort.png');
+  }
+  else if (highlightedWedge.indexOf("control") >= 0) {
+    $('.control > img').attr('src', '/images/triangles (with curve labels)/control.png');
+  }
+  else if (highlightedWedge.indexOf("recognition") >= 0) {
+    $('.recognition > img').attr('src', '/images/triangles (with curve labels)/recognition.png');
+  }
+  else if (highlightedWedge.indexOf("status") >= 0) {
+    $('.status > img').attr('src', '/images/triangles (with curve labels)/status.png');
+  }
+  $('.descriptions > p').css({'color': 'black'});
+};
 
-// Reset button headings
+// Reset Tool
 $('.centrecap > button').click(function(){
   event.preventDefault();
+  resetWedge();
   $('.centrecap > button').html('CRAFT BRINGS THE SOUL BACK INTO BEER');
   $('button').fadeIn(1500);
-  $('.caps').show();
+  $('.caps').fadeIn(1000);
   $('.descriptions').hide();
-  $('.selected').hide().removeClass('pulse');
+  $('.selectedWedge').hide();
   $('.centrecap > button').removeClass('centrecapRestart grow');
   $('.wedge > img').fadeTo('slow',1);
   $('.wedge > .descriptions > h4').css({'color':'rgb(0,0,0)'});
 });
+
+
 
 // ANIMATIONS
 // fade in on page load
