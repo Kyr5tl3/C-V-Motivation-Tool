@@ -68,6 +68,10 @@ $('.excitement > button').click(function(){
   $('.release > img').css({'opacity':'0.7'});
   $('.status > img').css({'opacity':'0.7'});
   $('.recognition > img').css({'opacity':'0.7'});
+  $('.insight4').css({'opacity':'0.1'});
+  $('.insight1, .insight2, .insight3').css({'border':'solid 3px #d24d4d'});
+  $('.insight1 h4, .insight2 h4, .insight3 h4, .insightClose').css({'color':'#d24d4d'});
+  $('.insightsButton').css({'color':'#d24d4d', 'background-color':'rgba(210, 77, 77, 0.3)','top':'47%','left':'73%'}).show();
 });
 
 //Release button functions
@@ -91,6 +95,10 @@ $('.release > button').click(function(){
   $('.release > .descriptions > h4').css({'color':'#e7ac4d'});
   $('.sociability > img').css({'opacity':'0.7'});
   $('.excitement > img').css({'opacity':'0.7'});
+  $('.insight3, .insight4').css({'opacity':'0.1'});
+  $('.insight1, .insight2').css({'border':'solid 3px #e7ac4d'});
+  $('.insight1 h4, .insight2 h4, .insightClose').css({'color':'#e7ac4d'});
+  $('.insightsButton').css({'color':'#e7ac4d', 'background-color':'rgb(231, 172, 77, 0.3)','top':'47%','left':'73%'}).show();
 });
 
 //Sociability button functions
@@ -115,6 +123,10 @@ $('.sociability > button').click(function(){
   $('.release > img').css({'opacity':'0.7'});
   $('.excitement > img').css({'opacity':'0.7'});
   $('.belonging > img').css({'opacity':'0.7'});
+  $('.insight3').css({'opacity':'0.1'});
+  $('.insight1, .insight2, .insight4').css({'border':'solid 3px #fcd04d'});
+  $('.insight1 h4, .insight2 h4, .insight4 h4, .insightClose').css({'color':'#fcd04d'});
+  $('.insightsButton').css({'color':'#fcd04d', 'background-color':'rgba(252, 208, 77, 0.3)','top':'47%','left':'5%'}).show();
 });
 
 
@@ -139,6 +151,10 @@ $('.belonging > button').click(function(){
   $('.belonging > .descriptions > h4').css({'color':'#b1955e'});
   $('.sociability > img').css({'opacity':'0.7'});
   $('.comfort > img').css({'opacity':'0.7'});
+  $('.insight1, .insight3').css({'opacity':'0.1'});
+  $('.insight2, .insight4').css({'border':'solid 3px #b1955e'});
+  $('.insight2 h4, .insight4 h4, .insightClose').css({'color':'#b1955e'});
+  $('.insightsButton').css({'color':'#b1955e', 'background-color':'rgba(177, 149, 94, 0.3)','top':'47%','left':'5%'}).show();
 });
 
 //Comfort button functions
@@ -163,6 +179,10 @@ $('.comfort > button').click(function(){
   $('.control > img').css({'opacity':'0.7'});
   $('.recognition > img').css({'opacity':'0.7'});
   $('.belonging > img').css({'opacity':'0.7'});
+  $('.insight1').css({'opacity':'0.1'});
+  $('.insight2, .insight3, .insight4').css({'border':'solid 3px #4e9ad2'});
+  $('.insight2 h4, .insight3 h4, .insight4 h4, .insightClose').css({'color':'#4e9ad2'});
+  $('.insightsButton').css({'color':'#4e9ad2', 'background-color':'rgba(78, 154, 210, 0.3)','top':'47%','left':'5%'}).show();
 });
 
 //Control button functions
@@ -186,6 +206,10 @@ $('.control > button').click(function(){
   $('.control > .descriptions > h4').css({'color':'#f2f2f2'});
   $('.comfort > img').css({'opacity':'0.7'});
   $('.recognition > img').css({'opacity':'0.7'});
+  $('.insight1, .insight2').css({'opacity':'0.1'});
+  $('.insight3, .insight4').css({'border':'solid 3px #4d4d4d'});
+  $('.insight3 h4, .insight4 h4, .insightClose').css({'color':'#4d4d4d'});
+  $('.insightsButton').css({'color':'#4d4d4d', 'background-color':'rgba(77, 77, 77, 0.3)','top':'47%','left':'5%'}).show();
 });
 
 //Recognition button functions
@@ -211,6 +235,10 @@ $('.recognition > button').click(function(){
   $('.status > img').css({'opacity':'0.7'});
   $('.control > img').css({'opacity':'0.7'});
   $('.comfort > img').css({'opacity':'0.7'});
+  $('.insight2').css({'opacity':'0.1'});
+  $('.insight1, .insight3, .insight4').css({'border':'solid 3px #94cc8a'});
+  $('.insight1 h4, .insight3 h4, .insight4 h4, .insightClose').css({'color':'#94cc8a'});
+  $('.insightsButton').css({'color':'#94cc8a', 'background-color':'rgba(148, 204, 138, 0.3)','top':'47%','left':'73%'}).show();
 });
 
 //Status button functions
@@ -234,6 +262,10 @@ $('.status > button').click(function(){
   $('.status > .descriptions > h4').css({'color':'#9b6ebb'});
   $('.excitement > img').css({'opacity':'0.7'});
   $('.recognition > img').css({'opacity':'0.7'});
+  $('.insight2, .insight4').css({'opacity':'0.1'});
+  $('.insight1, .insight3').css({'border':'solid 3px #9b6ebb'});
+  $('.insight1 h4, .insight3 h4, .insightClose').css({'color':'#9b6ebb'});
+  $('.insightsButton').css({'color':'#9b6ebb', 'background-color':'rgba(155, 111, 187, 0.3)','top':'47%','left':'73%'}).show();
 });
 
 // Check which wedge is highlighted & reset img src that wedge
@@ -266,6 +298,28 @@ function resetWedge(){
   $('.descriptions > p').css({'color': 'black'});
 };
 
+// Show Conusmer insights
+$('.insightsButton').click(function(){
+  event.preventDefault();
+  $('.wedgelabels, .centrecap').css({'opacity':'0.4'});
+  $('.insights').show();
+  $('.insightsButton').hide();
+});
+
+// Close Consumer insights
+$('.insightClose').click(function(){
+  $('.insights').hide();
+  $('.wedgelabels, .centrecap').css({'opacity':'1'});
+  $('.insightsButton').show();
+  resetInsights();
+});
+
+// Reset insights
+ function resetInsights(){
+   $('.insight1, .insight2, .insight3, .insight4').css({'opacity':'1','border':'solid 3px black'});
+   $('.insight1 h4, .insight2 h4, .insight3 h4, .insight4 h4,').css({'color':'black'});
+ }
+
 // Reset Tool
 $('.centrecap > button').click(function(){
   event.preventDefault();
@@ -278,6 +332,8 @@ $('.centrecap > button').click(function(){
   $('.centrecap > button').removeClass('centrecapRestart grow');
   $('.wedge > img').fadeTo('slow',1);
   $('.wedge > .descriptions > h4').css({'color':'rgb(0,0,0)'});
+  $('.insightsButton').hide();
+  resetInsights();
 });
 
 
